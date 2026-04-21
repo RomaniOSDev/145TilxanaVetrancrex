@@ -3,33 +3,101 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 60;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		30048A8E2F9774AC00B3ED85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30048A842F9774AC00B3ED85 /* AppDelegate.swift */; };
+		30048A8F2F9774AC00B3ED85 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30048A8B2F9774AC00B3ED85 /* SceneDelegate.swift */; };
+		30048A902F9774AC00B3ED85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30048A8C2F9774AC00B3ED85 /* ViewController.swift */; };
+		30048A912F9774AC00B3ED85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30048A852F9774AC00B3ED85 /* Assets.xcassets */; };
+		30048A932F9774AC00B3ED85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30048A882F9774AC00B3ED85 /* LaunchScreen.storyboard */; };
+		30048A942F9774AC00B3ED85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30048A8A2F9774AC00B3ED85 /* Main.storyboard */; };
+		30048A9A2F9774D500B3ED85 /* Features/App/ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30048A992F9774D500B3ED85 /* Features/App/ContentView.swift */; };
+		E1D200012F9774E000B3ED01 /* Core/Extensions/Color+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D100012F9774E000B3ED01 /* Core/Extensions/Color+App.swift */; };
+		E1D200032F9774E000B3ED03 /* Core/Data/AppStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D100032F9774E000B3ED03 /* Core/Data/AppStorage.swift */; };
+		E1D200042F9774E000B3ED04 /* Core/Utilities/CGImageDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D100042F9774E000B3ED04 /* Core/Utilities/CGImageDecode.swift */; };
+		E1D200052F9774E000B3ED05 /* Models/ActivityKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D100052F9774E000B3ED05 /* Models/ActivityKind.swift */; };
+		E1D200062F9774E000B3ED06 /* Models/ActivityDifficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D100062F9774E000B3ED06 /* Models/ActivityDifficulty.swift */; };
+		E1D200072F9774E000B3ED07 /* Models/CreationRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D100072F9774E000B3ED07 /* Models/CreationRecord.swift */; };
+		E1D200082F9774E000B3ED08 /* Models/DiscoverModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D100082F9774E000B3ED08 /* Models/DiscoverModels.swift */; };
+		E1D200092F9774E000B3ED09 /* Models/ActivityOutcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D100092F9774E000B3ED09 /* Models/ActivityOutcome.swift */; };
+		E1D2000A2F9774E000B3ED0A /* Features/Onboarding/OnboardingContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D1000A2F9774E000B3ED0A /* Features/Onboarding/OnboardingContainerView.swift */; };
+		E1D2000B2F9774E000B3ED0B /* Features/Onboarding/OnboardingBurstCanvasPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D1000B2F9774E000B3ED0B /* Features/Onboarding/OnboardingBurstCanvasPage.swift */; };
+		E1D2000C2F9774E000B3ED0C /* Features/Onboarding/OnboardingTransformPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D1000C2F9774E000B3ED0C /* Features/Onboarding/OnboardingTransformPage.swift */; };
+		E1D2000D2F9774E000B3ED0D /* Features/Onboarding/OnboardingCollagePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D1000D2F9774E000B3ED0D /* Features/Onboarding/OnboardingCollagePage.swift */; };
+		E1D2000E2F9774E000B3ED0E /* Features/Main/CreateNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D1000E2F9774E000B3ED0E /* Features/Main/CreateNavigation.swift */; };
+		E1D2000F2F9774E000B3ED0F /* Features/Main/CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D1000F2F9774E000B3ED0F /* Features/Main/CustomTabBarView.swift */; };
+		E1D200102F9774E000B3ED10 /* Features/Main/MainShellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D100102F9774E000B3ED10 /* Features/Main/MainShellView.swift */; };
+		E1D200112F9774E000B3ED11 /* Features/Create/CreateTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D100112F9774E000B3ED11 /* Features/Create/CreateTabView.swift */; };
+		E1D200122F9774E000B3ED12 /* Features/Gallery/GalleryTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D100122F9774E000B3ED12 /* Features/Gallery/GalleryTabView.swift */; };
+		E1D200132F9774E000B3ED13 /* Features/Discover/DiscoverTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D100132F9774E000B3ED13 /* Features/Discover/DiscoverTabView.swift */; };
+		E1D200142F9774E000B3ED14 /* Features/Activities/ActivitySelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D100142F9774E000B3ED14 /* Features/Activities/ActivitySelectionView.swift */; };
+		E1D200152F9774E000B3ED15 /* Features/Activities/ActivityResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D100152F9774E000B3ED15 /* Features/Activities/ActivityResultView.swift */; };
+		E1D200162F9774E000B3ED16 /* Features/Activities/PrismPlay/PrismPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D100162F9774E000B3ED16 /* Features/Activities/PrismPlay/PrismPlayView.swift */; };
+		E1D200172F9774E000B3ED17 /* Features/Activities/PrismPlay/PrismPlayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D100172F9774E000B3ED17 /* Features/Activities/PrismPlay/PrismPlayViewModel.swift */; };
+		E1D200182F9774E000B3ED18 /* Features/Activities/DoodleDash/DoodleDashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D100182F9774E000B3ED18 /* Features/Activities/DoodleDash/DoodleDashView.swift */; };
+		E1D200192F9774E000B3ED19 /* Features/Activities/DoodleDash/DoodleDashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D100192F9774E000B3ED19 /* Features/Activities/DoodleDash/DoodleDashViewModel.swift */; };
+		E1D2001A2F9774E000B3ED1A /* Features/Activities/MosaicMoments/MosaicMomentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D1001A2F9774E000B3ED1A /* Features/Activities/MosaicMoments/MosaicMomentsView.swift */; };
+		E1D2001B2F9774E000B3ED1B /* Features/Activities/MosaicMoments/MosaicMomentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D1001B2F9774E000B3ED1B /* Features/Activities/MosaicMoments/MosaicMomentsViewModel.swift */; };
+		E1D2001C2F9774E000B3ED1C /* Features/Settings/SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D1001C2F9774E000B3ED1C /* Features/Settings/SettingsView.swift */; };
+		E1D2001D2F9774E000B3ED1D /* Models/Achievements.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D1001D2F9774E000B3ED1D /* Models/Achievements.swift */; };
+		E1D2001E2F9774E000B3ED1E /* Models/MosaicGridPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D1001E2F9774E000B3ED1E /* Models/MosaicGridPreset.swift */; };
+		E1D2001F2F9774E000B3ED1F /* Features/Progress/AchievementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D1001F2F9774E000B3ED1F /* Features/Progress/AchievementsView.swift */; };
+		E1D200202F9774E000B3ED20 /* Features/Home/HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D100202F9774E000B3ED20 /* Features/Home/HomeView.swift */; };
+		E1D200232F9774E000B3ED23 /* Core/Extensions/AppChrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D100232F9774E000B3ED23 /* Core/Extensions/AppChrome.swift */; };
+		E1D200242F9774E000B3ED24 /* Features/Onboarding/OnboardingLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D100242F9774E000B3ED24 /* Features/Onboarding/OnboardingLayout.swift */; };
+		E1D200252F9774E000B3ED25 /* Models/AppExternalURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D100252F9774E000B3ED25 /* Models/AppExternalURL.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		29B8059B0E307D8A99AC25CE /* Pods-145TilxanaVetrancrex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-145TilxanaVetrancrex.debug.xcconfig"; path = "Target Support Files/Pods-145TilxanaVetrancrex/Pods-145TilxanaVetrancrex.debug.xcconfig"; sourceTree = "<group>"; };
 		30048A6C2F97749200B3ED85 /* 145TilxanaVetrancrex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 145TilxanaVetrancrex.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30048A842F9774AC00B3ED85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		30048A852F9774AC00B3ED85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30048A862F9774AC00B3ED85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30048A872F9774AC00B3ED85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		30048A892F9774AC00B3ED85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		30048A8B2F9774AC00B3ED85 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		30048A8C2F9774AC00B3ED85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		30048A992F9774D500B3ED85 /* Features/App/ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/App/ContentView.swift; sourceTree = "<group>"; };
+		A66824A8DA744C8F1D36A2DC /* Pods_145TilxanaVetrancrex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_145TilxanaVetrancrex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9D117D4193E95759F336EFB /* Pods-145TilxanaVetrancrex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-145TilxanaVetrancrex.release.xcconfig"; path = "Target Support Files/Pods-145TilxanaVetrancrex/Pods-145TilxanaVetrancrex.release.xcconfig"; sourceTree = "<group>"; };
+		E1D100012F9774E000B3ED01 /* Core/Extensions/Color+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Core/Extensions/Color+App.swift"; sourceTree = "<group>"; };
+		E1D100032F9774E000B3ED03 /* Core/Data/AppStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Data/AppStorage.swift; sourceTree = "<group>"; };
+		E1D100042F9774E000B3ED04 /* Core/Utilities/CGImageDecode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Utilities/CGImageDecode.swift; sourceTree = "<group>"; };
+		E1D100052F9774E000B3ED05 /* Models/ActivityKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/ActivityKind.swift; sourceTree = "<group>"; };
+		E1D100062F9774E000B3ED06 /* Models/ActivityDifficulty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/ActivityDifficulty.swift; sourceTree = "<group>"; };
+		E1D100072F9774E000B3ED07 /* Models/CreationRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/CreationRecord.swift; sourceTree = "<group>"; };
+		E1D100082F9774E000B3ED08 /* Models/DiscoverModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/DiscoverModels.swift; sourceTree = "<group>"; };
+		E1D100092F9774E000B3ED09 /* Models/ActivityOutcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/ActivityOutcome.swift; sourceTree = "<group>"; };
+		E1D1000A2F9774E000B3ED0A /* Features/Onboarding/OnboardingContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Onboarding/OnboardingContainerView.swift; sourceTree = "<group>"; };
+		E1D1000B2F9774E000B3ED0B /* Features/Onboarding/OnboardingBurstCanvasPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Onboarding/OnboardingBurstCanvasPage.swift; sourceTree = "<group>"; };
+		E1D1000C2F9774E000B3ED0C /* Features/Onboarding/OnboardingTransformPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Onboarding/OnboardingTransformPage.swift; sourceTree = "<group>"; };
+		E1D1000D2F9774E000B3ED0D /* Features/Onboarding/OnboardingCollagePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Onboarding/OnboardingCollagePage.swift; sourceTree = "<group>"; };
+		E1D1000E2F9774E000B3ED0E /* Features/Main/CreateNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Main/CreateNavigation.swift; sourceTree = "<group>"; };
+		E1D1000F2F9774E000B3ED0F /* Features/Main/CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Main/CustomTabBarView.swift; sourceTree = "<group>"; };
+		E1D100102F9774E000B3ED10 /* Features/Main/MainShellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Main/MainShellView.swift; sourceTree = "<group>"; };
+		E1D100112F9774E000B3ED11 /* Features/Create/CreateTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Create/CreateTabView.swift; sourceTree = "<group>"; };
+		E1D100122F9774E000B3ED12 /* Features/Gallery/GalleryTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Gallery/GalleryTabView.swift; sourceTree = "<group>"; };
+		E1D100132F9774E000B3ED13 /* Features/Discover/DiscoverTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Discover/DiscoverTabView.swift; sourceTree = "<group>"; };
+		E1D100142F9774E000B3ED14 /* Features/Activities/ActivitySelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Activities/ActivitySelectionView.swift; sourceTree = "<group>"; };
+		E1D100152F9774E000B3ED15 /* Features/Activities/ActivityResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Activities/ActivityResultView.swift; sourceTree = "<group>"; };
+		E1D100162F9774E000B3ED16 /* Features/Activities/PrismPlay/PrismPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Activities/PrismPlay/PrismPlayView.swift; sourceTree = "<group>"; };
+		E1D100172F9774E000B3ED17 /* Features/Activities/PrismPlay/PrismPlayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Activities/PrismPlay/PrismPlayViewModel.swift; sourceTree = "<group>"; };
+		E1D100182F9774E000B3ED18 /* Features/Activities/DoodleDash/DoodleDashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Activities/DoodleDash/DoodleDashView.swift; sourceTree = "<group>"; };
+		E1D100192F9774E000B3ED19 /* Features/Activities/DoodleDash/DoodleDashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Activities/DoodleDash/DoodleDashViewModel.swift; sourceTree = "<group>"; };
+		E1D1001A2F9774E000B3ED1A /* Features/Activities/MosaicMoments/MosaicMomentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Activities/MosaicMoments/MosaicMomentsView.swift; sourceTree = "<group>"; };
+		E1D1001B2F9774E000B3ED1B /* Features/Activities/MosaicMoments/MosaicMomentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Activities/MosaicMoments/MosaicMomentsViewModel.swift; sourceTree = "<group>"; };
+		E1D1001C2F9774E000B3ED1C /* Features/Settings/SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Settings/SettingsView.swift; sourceTree = "<group>"; };
+		E1D1001D2F9774E000B3ED1D /* Models/Achievements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/Achievements.swift; sourceTree = "<group>"; };
+		E1D1001E2F9774E000B3ED1E /* Models/MosaicGridPreset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/MosaicGridPreset.swift; sourceTree = "<group>"; };
+		E1D1001F2F9774E000B3ED1F /* Features/Progress/AchievementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Progress/AchievementsView.swift; sourceTree = "<group>"; };
+		E1D100202F9774E000B3ED20 /* Features/Home/HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Home/HomeView.swift; sourceTree = "<group>"; };
+		E1D100232F9774E000B3ED23 /* Core/Extensions/AppChrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Extensions/AppChrome.swift; sourceTree = "<group>"; };
+		E1D100242F9774E000B3ED24 /* Features/Onboarding/OnboardingLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Onboarding/OnboardingLayout.swift; sourceTree = "<group>"; };
+		E1D100252F9774E000B3ED25 /* Models/AppExternalURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/AppExternalURL.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		30048A7E2F97749300B3ED85 /* Exceptions for "145TilxanaVetrancrex" folder in "145TilxanaVetrancrex" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 30048A6B2F97749200B3ED85 /* 145TilxanaVetrancrex */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		30048A6E2F97749200B3ED85 /* 145TilxanaVetrancrex */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				30048A7E2F97749300B3ED85 /* Exceptions for "145TilxanaVetrancrex" folder in "145TilxanaVetrancrex" target */,
-			);
-			path = 145TilxanaVetrancrex;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		30048A692F97749200B3ED85 /* Frameworks */ = {
@@ -45,8 +113,10 @@
 		30048A632F97749200B3ED85 = {
 			isa = PBXGroup;
 			children = (
-				30048A6E2F97749200B3ED85 /* 145TilxanaVetrancrex */,
+				30048A8D2F9774AC00B3ED85 /* 145TilxanaVetrancrex */,
 				30048A6D2F97749200B3ED85 /* Products */,
+				A102523C05EC0CEC6D5A8FA8 /* Pods */,
+				338C79380F903327BFDEBD19 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +128,72 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		30048A8D2F9774AC00B3ED85 /* 145TilxanaVetrancrex */ = {
+			isa = PBXGroup;
+			children = (
+				30048A842F9774AC00B3ED85 /* AppDelegate.swift */,
+				30048A852F9774AC00B3ED85 /* Assets.xcassets */,
+				30048A862F9774AC00B3ED85 /* Info.plist */,
+				30048A882F9774AC00B3ED85 /* LaunchScreen.storyboard */,
+				30048A8A2F9774AC00B3ED85 /* Main.storyboard */,
+				30048A8B2F9774AC00B3ED85 /* SceneDelegate.swift */,
+				30048A8C2F9774AC00B3ED85 /* ViewController.swift */,
+				30048A992F9774D500B3ED85 /* Features/App/ContentView.swift */,
+				E1D100012F9774E000B3ED01 /* Core/Extensions/Color+App.swift */,
+				E1D100232F9774E000B3ED23 /* Core/Extensions/AppChrome.swift */,
+				E1D100032F9774E000B3ED03 /* Core/Data/AppStorage.swift */,
+				E1D100042F9774E000B3ED04 /* Core/Utilities/CGImageDecode.swift */,
+				E1D100052F9774E000B3ED05 /* Models/ActivityKind.swift */,
+				E1D100062F9774E000B3ED06 /* Models/ActivityDifficulty.swift */,
+				E1D100072F9774E000B3ED07 /* Models/CreationRecord.swift */,
+				E1D1001D2F9774E000B3ED1D /* Models/Achievements.swift */,
+				E1D1001E2F9774E000B3ED1E /* Models/MosaicGridPreset.swift */,
+				E1D100082F9774E000B3ED08 /* Models/DiscoverModels.swift */,
+				E1D100092F9774E000B3ED09 /* Models/ActivityOutcome.swift */,
+				E1D100252F9774E000B3ED25 /* Models/AppExternalURL.swift */,
+				E1D1000A2F9774E000B3ED0A /* Features/Onboarding/OnboardingContainerView.swift */,
+				E1D1000B2F9774E000B3ED0B /* Features/Onboarding/OnboardingBurstCanvasPage.swift */,
+				E1D100242F9774E000B3ED24 /* Features/Onboarding/OnboardingLayout.swift */,
+				E1D1000C2F9774E000B3ED0C /* Features/Onboarding/OnboardingTransformPage.swift */,
+				E1D1000D2F9774E000B3ED0D /* Features/Onboarding/OnboardingCollagePage.swift */,
+				E1D1000E2F9774E000B3ED0E /* Features/Main/CreateNavigation.swift */,
+				E1D1000F2F9774E000B3ED0F /* Features/Main/CustomTabBarView.swift */,
+				E1D100102F9774E000B3ED10 /* Features/Main/MainShellView.swift */,
+				E1D100202F9774E000B3ED20 /* Features/Home/HomeView.swift */,
+				E1D100112F9774E000B3ED11 /* Features/Create/CreateTabView.swift */,
+				E1D100122F9774E000B3ED12 /* Features/Gallery/GalleryTabView.swift */,
+				E1D100132F9774E000B3ED13 /* Features/Discover/DiscoverTabView.swift */,
+				E1D100142F9774E000B3ED14 /* Features/Activities/ActivitySelectionView.swift */,
+				E1D100152F9774E000B3ED15 /* Features/Activities/ActivityResultView.swift */,
+				E1D1001F2F9774E000B3ED1F /* Features/Progress/AchievementsView.swift */,
+				E1D100162F9774E000B3ED16 /* Features/Activities/PrismPlay/PrismPlayView.swift */,
+				E1D100172F9774E000B3ED17 /* Features/Activities/PrismPlay/PrismPlayViewModel.swift */,
+				E1D100182F9774E000B3ED18 /* Features/Activities/DoodleDash/DoodleDashView.swift */,
+				E1D100192F9774E000B3ED19 /* Features/Activities/DoodleDash/DoodleDashViewModel.swift */,
+				E1D1001A2F9774E000B3ED1A /* Features/Activities/MosaicMoments/MosaicMomentsView.swift */,
+				E1D1001B2F9774E000B3ED1B /* Features/Activities/MosaicMoments/MosaicMomentsViewModel.swift */,
+				E1D1001C2F9774E000B3ED1C /* Features/Settings/SettingsView.swift */,
+			);
+			path = 145TilxanaVetrancrex;
+			sourceTree = "<group>";
+		};
+		338C79380F903327BFDEBD19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A66824A8DA744C8F1D36A2DC /* Pods_145TilxanaVetrancrex.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A102523C05EC0CEC6D5A8FA8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				29B8059B0E307D8A99AC25CE /* Pods-145TilxanaVetrancrex.debug.xcconfig */,
+				A9D117D4193E95759F336EFB /* Pods-145TilxanaVetrancrex.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -65,6 +201,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30048A7F2F97749300B3ED85 /* Build configuration list for PBXNativeTarget "145TilxanaVetrancrex" */;
 			buildPhases = (
+				7AC29BA76FE93D000F47D149 /* [CP] Check Pods Manifest.lock */,
 				30048A682F97749200B3ED85 /* Sources */,
 				30048A692F97749200B3ED85 /* Frameworks */,
 				30048A6A2F97749200B3ED85 /* Resources */,
@@ -73,12 +210,7 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				30048A6E2F97749200B3ED85 /* 145TilxanaVetrancrex */,
-			);
 			name = 145TilxanaVetrancrex;
-			packageProductDependencies = (
-			);
 			productName = 145TilxanaVetrancrex;
 			productReference = 30048A6C2F97749200B3ED85 /* 145TilxanaVetrancrex.app */;
 			productType = "com.apple.product-type.application";
@@ -99,6 +231,7 @@
 				};
 			};
 			buildConfigurationList = 30048A672F97749200B3ED85 /* Build configuration list for PBXProject "145TilxanaVetrancrex" */;
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -106,8 +239,6 @@
 				Base,
 			);
 			mainGroup = 30048A632F97749200B3ED85;
-			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 30048A6D2F97749200B3ED85 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -122,81 +253,184 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30048A912F9774AC00B3ED85 /* Assets.xcassets in Resources */,
+				30048A932F9774AC00B3ED85 /* LaunchScreen.storyboard in Resources */,
+				30048A942F9774AC00B3ED85 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7AC29BA76FE93D000F47D149 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-145TilxanaVetrancrex-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		30048A682F97749200B3ED85 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30048A8E2F9774AC00B3ED85 /* AppDelegate.swift in Sources */,
+				30048A8F2F9774AC00B3ED85 /* SceneDelegate.swift in Sources */,
+				30048A9A2F9774D500B3ED85 /* Features/App/ContentView.swift in Sources */,
+				30048A902F9774AC00B3ED85 /* ViewController.swift in Sources */,
+				E1D200012F9774E000B3ED01 /* Core/Extensions/Color+App.swift in Sources */,
+				E1D200232F9774E000B3ED23 /* Core/Extensions/AppChrome.swift in Sources */,
+				E1D200032F9774E000B3ED03 /* Core/Data/AppStorage.swift in Sources */,
+				E1D200042F9774E000B3ED04 /* Core/Utilities/CGImageDecode.swift in Sources */,
+				E1D200052F9774E000B3ED05 /* Models/ActivityKind.swift in Sources */,
+				E1D200062F9774E000B3ED06 /* Models/ActivityDifficulty.swift in Sources */,
+				E1D200072F9774E000B3ED07 /* Models/CreationRecord.swift in Sources */,
+				E1D2001D2F9774E000B3ED1D /* Models/Achievements.swift in Sources */,
+				E1D2001E2F9774E000B3ED1E /* Models/MosaicGridPreset.swift in Sources */,
+				E1D2001F2F9774E000B3ED1F /* Features/Progress/AchievementsView.swift in Sources */,
+				E1D200082F9774E000B3ED08 /* Models/DiscoverModels.swift in Sources */,
+				E1D200092F9774E000B3ED09 /* Models/ActivityOutcome.swift in Sources */,
+				E1D200252F9774E000B3ED25 /* Models/AppExternalURL.swift in Sources */,
+				E1D2000A2F9774E000B3ED0A /* Features/Onboarding/OnboardingContainerView.swift in Sources */,
+				E1D2000B2F9774E000B3ED0B /* Features/Onboarding/OnboardingBurstCanvasPage.swift in Sources */,
+				E1D200242F9774E000B3ED24 /* Features/Onboarding/OnboardingLayout.swift in Sources */,
+				E1D2000C2F9774E000B3ED0C /* Features/Onboarding/OnboardingTransformPage.swift in Sources */,
+				E1D2000D2F9774E000B3ED0D /* Features/Onboarding/OnboardingCollagePage.swift in Sources */,
+				E1D2000E2F9774E000B3ED0E /* Features/Main/CreateNavigation.swift in Sources */,
+				E1D2000F2F9774E000B3ED0F /* Features/Main/CustomTabBarView.swift in Sources */,
+				E1D200102F9774E000B3ED10 /* Features/Main/MainShellView.swift in Sources */,
+				E1D200202F9774E000B3ED20 /* Features/Home/HomeView.swift in Sources */,
+				E1D200112F9774E000B3ED11 /* Features/Create/CreateTabView.swift in Sources */,
+				E1D200122F9774E000B3ED12 /* Features/Gallery/GalleryTabView.swift in Sources */,
+				E1D200132F9774E000B3ED13 /* Features/Discover/DiscoverTabView.swift in Sources */,
+				E1D200142F9774E000B3ED14 /* Features/Activities/ActivitySelectionView.swift in Sources */,
+				E1D200152F9774E000B3ED15 /* Features/Activities/ActivityResultView.swift in Sources */,
+				E1D200162F9774E000B3ED16 /* Features/Activities/PrismPlay/PrismPlayView.swift in Sources */,
+				E1D200172F9774E000B3ED17 /* Features/Activities/PrismPlay/PrismPlayViewModel.swift in Sources */,
+				E1D200182F9774E000B3ED18 /* Features/Activities/DoodleDash/DoodleDashView.swift in Sources */,
+				E1D200192F9774E000B3ED19 /* Features/Activities/DoodleDash/DoodleDashViewModel.swift in Sources */,
+				E1D2001A2F9774E000B3ED1A /* Features/Activities/MosaicMoments/MosaicMomentsView.swift in Sources */,
+				E1D2001B2F9774E000B3ED1B /* Features/Activities/MosaicMoments/MosaicMomentsViewModel.swift in Sources */,
+				E1D2001C2F9774E000B3ED1C /* Features/Settings/SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		30048A882F9774AC00B3ED85 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30048A872F9774AC00B3ED85 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		30048A8A2F9774AC00B3ED85 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30048A892F9774AC00B3ED85 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		30048A802F97749300B3ED85 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29B8059B0E307D8A99AC25CE /* Pods-145TilxanaVetrancrex.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 145TilxanaVetrancrex/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tilxana Vetrancrex";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "home.-45TilxanaVetrancrex";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ard.t9lx2n1v3tr0ncr3x;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		30048A812F97749300B3ED85 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9D117D4193E95759F336EFB /* Pods-145TilxanaVetrancrex.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 145TilxanaVetrancrex/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tilxana Vetrancrex";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "home.-45TilxanaVetrancrex";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ard.t9lx2n1v3tr0ncr3x;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -204,7 +438,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -267,7 +501,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
