@@ -8,7 +8,7 @@ workflows:
           XCODE_WORKSPACE: "145TilxanaVetrancrex.xcworkspace"
           XCODE_SCHEME: "145TilxanaVetrancrex"
           BUNDLE_ID: "com.ard.t9lx2n1v3tr0ncr3x"
-          EXTENSION_BUNDLE_ID: "com.dai.str9n0xfl2lm3p0ns.NotificationServiceExtension"
+         
           APP_STORE_APP_ID: 6762079699
         xcode: latest
         cocoapods: 1.14.2
@@ -25,7 +25,7 @@ workflows:
         - name: Fetch signing files
           script: |
             app-store-connect fetch-signing-files $BUNDLE_ID --type IOS_APP_STORE --create
-            app-store-connect fetch-signing-files $EXTENSION_BUNDLE_ID --type IOS_APP_STORE --create
+          
         - name: Use system default keychain
           script: |
             keychain add-certificates
